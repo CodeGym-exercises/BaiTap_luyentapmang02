@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let str = "Hello javascript, i'm PHP, 2 3 ";
+		let count = 1;
+		for(let i = 0; i< str.length;i++){
+			if(str[i]==" "){
+				count++;
+			}
+		}
+		if(str[str.length -1] == " "){
+			count-=1;
+		}
+		alert("Chuỗi '" +str+ "' có " + count+" từ");
+
+	</script>
+</body>
+</html>

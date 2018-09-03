@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let size = Number(prompt("Nhập vào kích thước mảng"));
+		let arr = [];
+		let count = 0;
+		for(let i = 0;i<size;i++){
+			arr[i] = prompt("Nhập vào ký tự");
+			if(arr[i]>=0&&arr[i]<=9){
+				count++;
+			}
+		}	
+		alert("Số ký tự số là " + count);
+		console.log(arr);
+	</script>
+</body>
+</html>

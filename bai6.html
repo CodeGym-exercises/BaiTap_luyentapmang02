@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai6</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let string = prompt("Nhập vào chuỗi ký tự");
+		let arr = [];
+		let temp_value = false;
+		for(let i =0;i<string.length;i++){
+			arr.push(string[i]);
+		}
+		for(let i in arr){
+			if(arr[i]=="-"){
+				console.log(arr[i]);
+				temp_value =true;
+				arr[i] = "_";
+			}
+		}
+		arr = arr.join(" ");
+		if(temp_value){
+			alert("Chuỗi ký tự sau khi được sửa là" + arr);
+		}else{
+			alert("Chuỗi ký tự không cần sửa!!! ");
+		}
+	</script>
+</body>
+</html>
